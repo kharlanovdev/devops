@@ -1,0 +1,9 @@
+[Unit]
+Description=BACKUP database devops
+
+[Service]
+Type=oneshot
+ExecStart=/bin/bash /home/kharlanov/backup_database/backup_postgresql.sh
+
+[Install]
+WantedBy=default.target

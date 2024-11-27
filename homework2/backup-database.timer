@@ -1,0 +1,9 @@
+[Unit]
+Description=Backup database devops on 5a.m.
+
+[Timer]
+OnCalendar=*-*-* 05:00:00
+Unit=backup-database.service
+
+[Install]
+WantedBy=timers.target
